@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "title": "My Great Novel",
+    "genre": "fantasy",
+    "target_audience": "YA",
+    "desired_length_words": 80000,
+    "language": "en-US",
+    "copyright_holder": "Author Name"
+  },
+  "outline": [
+    {
+      "slug": "chapter_one",
+      "title": "Chapter One",
+      "parts": [
+        {"name": "Opening", "words": 1500}
+      ]
+    }
+  ],
+  "characters": ["Protagonist - brief bio"],
+  "style_guidelines": "Use engaging, clear prose.",
+  "media_assets": [],
+  "research_links": ["https://example.com"],
+  "output_preferences": {
+    "file_formats": ["docx", "pdf", "epub"],
+    "chapter_size_words": 4000,
+    "token_budget_hard_cap": 16000
+  }
+}

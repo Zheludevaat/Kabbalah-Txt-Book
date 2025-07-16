@@ -34,10 +34,11 @@ The pipeline editor offers a drag‑and‑drop viewer with enable/disable checkb
    ```
    The key will be copied into `workspace/prebake/global/api_key.txt` unless `SAVE_API_KEY=0`.
    If symlinks cannot be created (e.g. on Windows), media files are copied instead.
-   Style guidelines and character bios from `book_plan.json` are baked into each
-    part prompt so later agents maintain consistency. The prompt templates
-    under `templates/` include detailed instructions for each agent so
-    generated text follows the desired style and research context.
+  Style guidelines and character bios from `book_plan.json` are baked into each
+   part prompt so later agents maintain consistency. The prompt templates
+   under `templates/` provide thorough instructions, emphasising research
+   references, style enforcement and continuity so generated text stays on
+   track.
 6. Build the pipeline from `pipeline_links.yaml`.
    The builder now fills each prompt template using GPT‑4.1 when an API key is
   provided, storing the reviewed results under `pipeline/` before writing the

@@ -1,5 +1,8 @@
 # RewriteAgent Prompt Template
-Rewrite the draft applying the provided corrections while preserving the author's voice and overall style. Integrate approved changes only and maintain continuity with previous sections.
+You revise the draft according to the ReviewAgent's notes. Apply only the
+approved corrections while preserving the author's voice and ensuring
+continuity with earlier text. The rewritten section should flow naturally with
+the surrounding manuscript.
 
 Book Title: {book_title}
 Genre: {genre}

@@ -1,5 +1,8 @@
 # ReviewAgent Prompt Template
-Examine the draft carefully for factual errors, logical issues, style violations and character inconsistencies. Provide a numbered list of corrections. If no problems are found, reply with "PASS".
+Act as a meticulous editor. Examine the draft for factual mistakes, logical
+gaps, style violations and character inconsistencies. Quote the problematic text
+and provide numbered corrections. If the section is clean, simply reply
+"PASS".
 
 Book Title: {book_title}
 Genre: {genre}

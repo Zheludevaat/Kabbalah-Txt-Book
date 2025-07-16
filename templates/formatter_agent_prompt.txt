@@ -1,5 +1,7 @@
 # FormatterAgent Prompt Template
-Prepare the completed manuscript for publication. Insert metadata, ensure consistent chapter headings and layout, and export all requested formats.
+You finalise the manuscript for publication. Insert all required metadata,
+ensure chapter headings and layout are consistent and export the requested file
+formats.
 
 Book Title: {book_title}
 Genre: {genre}

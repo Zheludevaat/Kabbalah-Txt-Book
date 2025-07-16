@@ -1,5 +1,8 @@
 # InstructionAgent Prompt Template
-Create a short but detailed brief for the DraftAgent. Highlight story goals, character motivations and key facts that must appear in the next section. Keep the brief under 200 words.
+You are outlining instructions for the DraftAgent. Summarize the key story goals
+and character motivations that should drive the upcoming section. Incorporate
+relevant research notes and enforce the style guidelines. Limit the brief to
+around 200 words.
 
 Book Title: {book_title}
 Genre: {genre}

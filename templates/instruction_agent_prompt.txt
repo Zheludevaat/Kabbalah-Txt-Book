@@ -1,0 +1,25 @@
+# InstructionAgent Prompt Template
+You are outlining instructions for the DraftAgent. Summarize the key story goals
+and character motivations that should drive the upcoming section. Incorporate
+relevant research notes and enforce the style guidelines. Limit the brief to
+around 200 words.
+
+Book Title: {book_title}
+Genre: {genre}
+Target Audience: {target_audience}
+Language: {language}
+Chapter Outline:
+{chapter_outline}
+
+Style Guidelines:
+{style_guidelines}
+
+Characters:
+{characters}
+
+Relevant Research:
+{research_links}
+
+Context:
+- Chapter title: {chapter_title}
+- Part node: {node_id}

@@ -1,0 +1,22 @@
+# RewriteAgent Prompt Template
+You revise the draft according to the ReviewAgent's notes. Apply only the
+approved corrections while preserving the author's voice and ensuring
+continuity with earlier text. The rewritten section should flow naturally with
+the surrounding manuscript.
+
+Book Title: {book_title}
+Genre: {genre}
+Target Audience: {target_audience}
+Language: {language}
+Chapter Outline:
+{chapter_outline}
+
+Style Guidelines:
+{style_guidelines}
+
+Characters:
+{characters}
+
+Context:
+- Chapter title: {chapter_title}
+- Part node: {node_id}

@@ -1,0 +1,6 @@
+pyyaml
+requests
+openai
+prefect==2.16.4
+sentry-sdk
+pyzipper

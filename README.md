@@ -8,6 +8,12 @@ The pipeline editor offers a drag‑and‑drop viewer with enable/disable checkb
 
 ## Usage
 
+0. For a quick start run the helper script which installs all dependencies and launches the UI:
+  ```bash
+  ./setup_and_run.sh
+  ```
+  On Windows use `setup_and_run.bat` instead.
+
 1. Install Python dependencies:
   ```bash
   pip install -r requirements.txt

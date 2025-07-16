@@ -8,15 +8,18 @@ The pipeline editor offers a drag‑and‑drop viewer with enable/disable checkb
 
 ## Usage
 
-0. For a quick start run the helper script which installs all dependencies and launches the UI:
+0. Install dependencies separately from running the app. Use the helper scripts provided in the repo:
   ```bash
-  ./setup_and_run.sh
+  ./install_deps.sh       # installs Python and Node packages
+  ./run_app.sh            # launches the Electron UI
   ```
-  On Windows use `setup_and_run.bat` instead.
+  On Windows use `install_deps.bat` and `run_app.bat` instead. The older `setup_and_run.sh` script still combines both steps for convenience.
 
-1. Install Python dependencies:
+1. If you prefer manual installation run:
   ```bash
-  pip install -r requirements.txt
+  pip install -U -r requirements.txt
+  cd electron-app
+  npm install
   ```
 2. Install Node.js (includes `npm`) for the Electron desktop app. Packaging
    requires Node 18 or later and the `electron-forge` CLI which is installed
@@ -59,11 +62,9 @@ The pipeline editor offers a drag‑and‑drop viewer with enable/disable checkb
   # Each run archives the workspace into BACKUP_DIR (or the workspace parent)
   # and encrypts the zip if BACKUP_PASSWORD is set.
   # After each rewrite step a plagiarism scan runs and stores the similarity score.
-7. Start the desktop UI:
+7. Start the desktop UI after installation:
    ```bash
-   cd electron-app
-   npm install
-   npm start
+   ./run_app.sh
    ```
 8. The UI contains fields for all settings, the API key, and a Book Plan textarea. Use the buttons to run the Pre‑bake and build steps, then inspect or edit the generated pipeline YAML directly in the interface. After editing press **Save Pipeline** and click **Run Pipeline** to execute the steps while a live log displays progress below. A **Dark** button in the header toggles the theme to improve readability.
 

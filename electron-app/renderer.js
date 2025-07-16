@@ -70,6 +70,14 @@ function App() {
     run(`OPENAI_API_KEY=${apiKey} WORDS_PER_CHAPTER=${chapterWords} WORDS_PER_PART=${partWords} MAX_OUTPUT_TOKENS=${maxTokens} MODEL=${model} python -m orchestrator.agents.prebake_agent`, loadPipeline);
   }
 
+  function installDeps(){
+    if(process.platform === 'win32'){
+      runSpawn('cmd', ['/c', 'install_deps.bat']);
+    } else {
+      runSpawn('bash', ['install_deps.sh']);
+    }
+  }
+
   function buildPipeline() {
     run(`OPENAI_API_KEY=${apiKey} python orchestrator/pipeline_builder.py`, loadPipeline);
   }
@@ -188,7 +196,10 @@ function App() {
       e(InfoLabel, {text:'Book Plan (JSON)', info:'Paste or edit the complete book plan used for pipeline generation'}, null),
       e('textarea', {className:'border w-full h-32 p-1', value: bookPlan, onChange: ev => setBookPlan(ev.target.value), 'aria-label':'Book Plan'})
     ),
-    e('button', {className:'bg-blue-500 text-white px-3 py-1', onClick: () => {runPrebake(); setStep(1);}}, 'Run Pre-bake')
+    e('div', {className:'space-x-2'},
+      e('button', {className:'bg-green-600 text-white px-3 py-1', onClick: installDeps}, 'Install'),
+      e('button', {className:'bg-blue-500 text-white px-3 py-1', onClick: () => {runPrebake(); setStep(1);}}, 'Run Pre-bake')
+    )
   );
 
   function moveStep(offset){
